@@ -26,6 +26,21 @@ listDog:
   iamRoleStatements:
     - Effect: Allow
       Action:
-        - dynamodb:Scan
+        - dynamodb:Get
+      Resource:
+        - "Fn::GetAtt": [dogsTable, Arn]
+
+getDog:
+  handler: functions/http/dogs/get.main
+  events:
+    - http:
+        path: dogs
+        method: get
+        cors: true
+        private: true
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:GetItem
       Resource:
         - "Fn::GetAtt": [dogsTable, Arn]
