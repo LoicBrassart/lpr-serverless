@@ -14,3 +14,18 @@ createDog:
         - dynamodb:UpdateTable
       Resource:
         - "Fn::GetAtt": [dogsTable, Arn]
+
+listDog:
+  handler: functions/http/dogs/list.main
+  events:
+    - http:
+        path: dogs
+        method: get
+        cors: true
+        private: true
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Scan
+      Resource:
+        - "Fn::GetAtt": [dogsTable, Arn]
