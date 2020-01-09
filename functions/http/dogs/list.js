@@ -7,8 +7,8 @@ export async function main(event, context) {
   };
 
   try {
-    await dynamoDbLib.call("get");
-    return success(params.Item);
+    const res = await dynamoDbLib.call("scan", params);
+    return success(res);
   } catch (e) {
     return failure({ error: e });
   }
