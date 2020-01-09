@@ -34,7 +34,7 @@ getDog:
   handler: functions/http/dogs/get.main
   events:
     - http:
-        path: dogs
+        path: dogs/{id}
         method: get
         cors: true
         private: true

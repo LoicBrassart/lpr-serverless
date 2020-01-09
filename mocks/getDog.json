@@ -1,6 +1,6 @@
 {
   "mock": true,
-  "params": {
+  "pathParameters": {
     "id": "d19a4570-32fb-11ea-b76e-15d85b3fa280"
   }
 }
