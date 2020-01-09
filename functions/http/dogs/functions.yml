@@ -1,0 +1,16 @@
+createDog:
+  handler: functions/http/dogs/create.main
+  events:
+    - http:
+        path: dogs
+        method: post
+        cors: true
+        private: true
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:UpdateTable
+      Resource:
+        - "Fn::GetAtt": [dogsTable, Arn]

@@ -1,0 +1,27 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "main": "handler.js",
+  "author": "<gregoire@lapilulerouge.io>",
+  "dependencies": {
+    "@babel/runtime": "7.0.0",
+    "dotenv": "6.1.0",
+    "dotenv-webpack": "1.6.0",
+    "serverless": "1.35.1",
+    "serverless-iam-roles-per-function": "1.0.4",
+    "source-map-support": "0.5.9",
+    "uuid": "3.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.1.2",
+    "@babel/plugin-transform-runtime": "7.1.0",
+    "@babel/preset-env": "7.1.0",
+    "@babel/preset-react": "7.0.0",
+    "aws-sdk": "2.437.0",
+    "babel-loader": "8.0.4",
+    "babel-plugin-source-map-support": "2.0.1",
+    "serverless-webpack": "5.2.0",
+    "webpack": "4.20.2",
+    "webpack-node-externals": "1.7.2"
+  }
+}

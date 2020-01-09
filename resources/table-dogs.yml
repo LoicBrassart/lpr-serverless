@@ -1,0 +1,12 @@
+Resources:
+  dogsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: "id"
+          AttributeType: "S"
+      BillingMode: PAY_PER_REQUEST
+      KeySchema:
+        - AttributeName: "id"
+          KeyType: "HASH"
+      TableName: ${self:service}-${self:provider.stage}-dogs

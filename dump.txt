@@ -1,0 +1,170 @@
+Serverless: Load command interactiveCli
+Serverless: Load command config
+Serverless: Load command config:credentials
+Serverless: Load command config:tabcompletion
+Serverless: Load command config:tabcompletion:install
+Serverless: Load command config:tabcompletion:uninstall
+Serverless: Load command create
+Serverless: Load command install
+Serverless: Load command package
+Serverless: Load command deploy
+Serverless: Load command deploy:function
+Serverless: Load command deploy:list
+Serverless: Load command deploy:list:functions
+Serverless: Load command invoke
+Serverless: Load command invoke:local
+Serverless: Load command info
+Serverless: Load command logs
+Serverless: Load command metrics
+Serverless: Load command print
+Serverless: Load command remove
+Serverless: Load command rollback
+Serverless: Load command rollback:function
+Serverless: Load command slstats
+Serverless: Load command plugin
+Serverless: Load command plugin
+Serverless: Load command plugin:install
+Serverless: Load command plugin
+Serverless: Load command plugin:uninstall
+Serverless: Load command plugin
+Serverless: Load command plugin:list
+Serverless: Load command plugin
+Serverless: Load command plugin:search
+Serverless: Load command config
+Serverless: Load command config:credentials
+Serverless: Load command rollback
+Serverless: Load command rollback:function
+Serverless: Load command upgrade
+Serverless: Load command uninstall
+Serverless: Load command webpack
+Serverless: Load command login
+Serverless: Load command logout
+Serverless: Load command generate-event
+Serverless: Load command test
+Serverless: Load command dashboard
+Serverless: Invoke deploy
+Serverless: Invoke package
+Serverless: Invoke aws:common:validate
+Serverless: Invoke aws:common:cleanupTempDir
+Serverless: Invoke webpack:validate
+Serverless: Invoke webpack:compile
+Serverless: Bundling with Webpack...
+Time: [1m1186[39m[22mms
+Built at: 01/09/2020 [1m3:10:03 PM[39m[22m
+                            [1mAsset[39m[22m      [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+    [1m[32mfunctions/http/dogs/create.js[39m[22m  7.07 KiB       [1m0[39m[22m  [1m[32m[emitted][39m[22m  functions/http/dogs/create
+[1m[32mfunctions/http/dogs/create.js.map[39m[22m  6.83 KiB       [1m0[39m[22m  [1m[32m[emitted][39m[22m  functions/http/dogs/create
+Entrypoint [1mfunctions/http/dogs/create[39m[22m = [1m[32mfunctions/http/dogs/create.js[39m[22m [1m[32mfunctions/http/dogs/create.js.map[39m[22m
+[0] [1mexternal "source-map-support/register"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+[1] [1mexternal "@babel/runtime/regenerator"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+[2] [1mexternal "@babel/runtime/helpers/asyncToGenerator"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+[3] [1mexternal "uuid"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+[4] [1mexternal "aws-sdk"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+[5] [1m./functions/http/dogs/create.js + 2 modules[39m[22m 2.15 KiB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    | [1m./functions/http/dogs/create.js[39m[22m 1.53 KiB[1m[32m [built][39m[22m
+    | [1m./libs/dynamodb-lib.js[39m[22m 202 bytes[1m[32m [built][39m[22m
+    | [1m./libs/response-lib.js[39m[22m 407 bytes[1m[32m [built][39m[22m
+Serverless: Invoke webpack:package
+Serverless: Package lock found - Using locked versions
+Serverless: Packing external modules: source-map-support@0.5.9, @babel/runtime@7.0.0, uuid@3.3.2
+Serverless: Packaging service...
+Serverless: Invoke aws:package:finalize
+Serverless: Invoke aws:common:moveArtifactsToPackage
+Serverless: Invoke aws:common:validate
+Serverless: Invoke aws:deploy:deploy
+Serverless: [AWS cloudformation 200 0.27s 0 retries] describeStacks({ StackName: 'init-BRASSART-LOIC-dev' })
+Serverless: [AWS cloudformation 200 0.222s 0 retries] describeStackResource({ StackName: 'init-BRASSART-LOIC-dev',
+  LogicalResourceId: 'ServerlessDeploymentBucket' })
+Serverless: [AWS s3 200 0.26s 0 retries] listObjectsV2({ Bucket:
+   'init-brassart-loic-dev-serverlessdeploymentbucket-h926ejyc20tg',
+  Prefix: 'serverless/init-BRASSART-LOIC/dev' })
+Serverless: [AWS s3 200 0.212s 0 retries] headObject({ Bucket:
+   'init-brassart-loic-dev-serverlessdeploymentbucket-h926ejyc20tg',
+  Key:
+   'serverless/init-BRASSART-LOIC/dev/1578582556332-2020-01-09T15:09:16.332Z/compiled-cloudformation-template.json' })
+Serverless: [AWS s3 200 0.235s 0 retries] headObject({ Bucket:
+   'init-brassart-loic-dev-serverlessdeploymentbucket-h926ejyc20tg',
+  Key:
+   'serverless/init-BRASSART-LOIC/dev/1578582556332-2020-01-09T15:09:16.332Z/init-BRASSART-LOIC.zip' })
+Serverless: [AWS lambda 200 0.231s 0 retries] getFunction({ FunctionName: 'init-BRASSART-LOIC-dev-createDog' })
+Serverless: [AWS sts 200 0.537s 0 retries] getCallerIdentity({})
+Serverless: Uploading CloudFormation file to S3...
+Serverless: [AWS s3 200 0.288s 0 retries] putObject({ Body:
+   <Buffer 7b 22 41 57 53 54 65 6d 70 6c 61 74 65 46 6f 72 6d 61 74 56 65 72 73 69 6f 6e 22 3a 22 32 30 31 30 2d 30 39 2d 30 39 22 2c 22 44 65 73 63 72 69 70 74 ... >,
+  Bucket:
+   'init-brassart-loic-dev-serverlessdeploymentbucket-h926ejyc20tg',
+  Key:
+   'serverless/init-BRASSART-LOIC/dev/1578582607614-2020-01-09T15:10:07.614Z/compiled-cloudformation-template.json',
+  ContentType: 'application/json',
+  Metadata:
+   { filesha256: 'NBe6zn4NQgk5Y/1w6tc5Fk5XSbLGeZVr431I8Q2Hi0c=' } })
+Serverless: Uploading artifacts...
+Serverless: Uploading service init-BRASSART-LOIC.zip file to S3 (463.48 KB)...
+Serverless: [AWS s3 200 0.376s 0 retries] putObject({ Body:
+   <Buffer 50 4b 03 04 14 00 08 00 08 00 00 00 21 00 00 00 00 00 00 00 00 00 00 00 00 00 1d 00 00 00 66 75 6e 63 74 69 6f 6e 73 2f 68 74 74 70 2f 64 6f 67 73 2f ... >,
+  Bucket:
+   'init-brassart-loic-dev-serverlessdeploymentbucket-h926ejyc20tg',
+  Key:
+   'serverless/init-BRASSART-LOIC/dev/1578582607614-2020-01-09T15:10:07.614Z/init-BRASSART-LOIC.zip',
+  ContentType: 'application/zip',
+  Metadata:
+   { filesha256: 'xml5YvuBWW53CuG22soupjT5tJ4NxmT6iYaPuj49HPA=' } })
+Serverless: Validating template...
+Serverless: [AWS cloudformation 200 0.859s 0 retries] validateTemplate({ TemplateURL:
+   'https://s3.amazonaws.com/init-brassart-loic-dev-serverlessdeploymentbucket-h926ejyc20tg/serverless/init-BRASSART-LOIC/dev/1578582607614-2020-01-09T15:10:07.614Z/compiled-cloudformation-template.json' })
+Serverless: Updating Stack...
+Serverless: [AWS cloudformation 200 1.025s 0 retries] updateStack({ StackName: 'init-BRASSART-LOIC-dev',
+  Capabilities: [ 'CAPABILITY_IAM', 'CAPABILITY_NAMED_IAM', [length]: 2 ],
+  Parameters: [ [length]: 0 ],
+  TemplateURL:
+   'https://s3.amazonaws.com/init-brassart-loic-dev-serverlessdeploymentbucket-h926ejyc20tg/serverless/init-BRASSART-LOIC/dev/1578582607614-2020-01-09T15:10:07.614Z/compiled-cloudformation-template.json',
+  Tags: [ { Key: 'STAGE', Value: 'dev' }, [length]: 1 ] })
+Serverless: Checking Stack update progress...
+Serverless: [AWS cloudformation 200 0.621s 0 retries] describeStackEvents({ StackName:
+   'arn:aws:cloudformation:eu-west-1:523614992827:stack/init-BRASSART-LOIC-dev/8d4838e0-32ed-11ea-b094-02e29081c656' })
+...Serverless: [AWS cloudformation 200 0.373s 0 retries] describeStackEvents({ StackName:
+   'arn:aws:cloudformation:eu-west-1:523614992827:stack/init-BRASSART-LOIC-dev/8d4838e0-32ed-11ea-b094-02e29081c656' })
+...Serverless: [AWS cloudformation 200 0.401s 0 retries] describeStackEvents({ StackName:
+   'arn:aws:cloudformation:eu-west-1:523614992827:stack/init-BRASSART-LOIC-dev/8d4838e0-32ed-11ea-b094-02e29081c656' })
+..Serverless: [AWS cloudformation 200 0.421s 0 retries] describeStackEvents({ StackName:
+   'arn:aws:cloudformation:eu-west-1:523614992827:stack/init-BRASSART-LOIC-dev/8d4838e0-32ed-11ea-b094-02e29081c656' })
+..
+Serverless: Stack update finished...
+Serverless: Invoke aws:info
+Serverless: [AWS cloudformation 200 0.225s 0 retries] describeStacks({ StackName: 'init-BRASSART-LOIC-dev' })
+Serverless: [AWS cloudformation 200 0.248s 0 retries] listStackResources({ StackName: 'init-BRASSART-LOIC-dev' })
+Serverless: [AWS cloudformation 200 0.23s 0 retries] describeStackResources({ StackName: 'init-BRASSART-LOIC-dev' })
+Serverless: [AWS apigateway 200 0.254s 0 retries] getApiKey({ apiKey: 'j26ciuymh4', includeValue: true })
+Service Information
+service: init-BRASSART-LOIC
+stage: dev
+region: eu-west-1
+stack: init-BRASSART-LOIC-dev
+resources: 17
+api keys:
+  dev-init-BRASSART-LOIC-Key: KIsXZs4iuV3We4ZEYQuLF6C588uTycKPakimNOrF
+endpoints:
+  POST - https://8gz811fvk5.execute-api.eu-west-1.amazonaws.com/dev/dogs
+functions:
+  createDog: init-BRASSART-LOIC-dev-createDog
+layers:
+  None
+Serverless: Invoke aws:deploy:finalize
+Serverless: [AWS s3 200 0.255s 0 retries] listObjectsV2({ Bucket:
+   'init-brassart-loic-dev-serverlessdeploymentbucket-h926ejyc20tg',
+  Prefix: 'serverless/init-BRASSART-LOIC/dev' })
+Serverless: Removing old service artifacts from S3...
+Serverless: [AWS s3 200 0.243s 0 retries] deleteObjects({ Bucket:
+   'init-brassart-loic-dev-serverlessdeploymentbucket-h926ejyc20tg',
+  Delete:
+   { Objects:
+      [ { Key:
+           'serverless/init-BRASSART-LOIC/dev/1578580644095-2020-01-09T14:37:24.095Z/compiled-cloudformation-template.json' },
+        { Key:
+           'serverless/init-BRASSART-LOIC/dev/1578580644095-2020-01-09T14:37:24.095Z/init-BRASSART-LOIC.zip' },
+        { Key:
+           'serverless/init-BRASSART-LOIC/dev/1578580820319-2020-01-09T14:40:20.319Z/compiled-cloudformation-template.json' },
+        { Key:
+           'serverless/init-BRASSART-LOIC/dev/1578580820319-2020-01-09T14:40:20.319Z/init-BRASSART-LOIC.zip' },
+        [length]: 4 ] } })
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.

@@ -1,0 +1,7 @@
+{
+  "mock": true,
+  "body": {
+    "name": "John",
+    "breed": "Beagle"
+  }
+}
